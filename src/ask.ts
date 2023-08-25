@@ -1,6 +1,6 @@
 import Inquirer from "inquirer";
 
-export type TPromptType =
+export type T_PromptType =
   | "input"
   | "number"
   | "confirm"
@@ -11,8 +11,8 @@ export type TPromptType =
   | "password"
   | "editor";
 
-export type PromptListType = {
-  type: TPromptType;
+export type T_PromptList = {
+  type: T_PromptType;
   name: string;
   message: string;
   choices: { name: string; value: string | number | boolean }[];
@@ -25,7 +25,7 @@ export type PromptListType = {
 };
 
 // 询问
-async function askPrompts(prompts: PromptListType[]) {
+async function askPrompts(prompts: T_PromptList[]) {
   return await new Inquirer.prompt(prompts);
 }
 

@@ -1,7 +1,7 @@
 import ora from "ora";
 import chalk from "chalk";
 
-export type LoadingTypeOptions = {
+export type T_Loading = {
   projectName: string;
 };
 
@@ -18,7 +18,7 @@ function sleep(delay: number): Promise<boolean> {
 export async function doLoading(
   message: string,
   cb: () => any,
-  options: LoadingTypeOptions
+  options: T_Loading
 ): Promise<any> {
   const loading = ora(message);
   loading.start();

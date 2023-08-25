@@ -1,7 +1,8 @@
 {
   "name": "mdu-cli",
+  "private": false,
   "version": "1.0.0",
-  "description": "",
+  "description": "Quick build Node.js cli.",
   "main": "./bin/cli.js",
   "type": "commonjs",
   "bin": {
@@ -9,11 +10,21 @@
   },
   "scripts": {
     "dev": "nodemon",
+    "changelog": "conventional-changelog -p -i CHANGELOG.md -s",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "cli",
+    "mdu-cli",
+    "nodejs",
+    "express"
+  ],
+  "author": "LilMartin",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jamartin-create/mdu-cli.git"
+  },
   "dependencies": {
     "chalk": "^4.1.2",
     "commander": "^11.0.0",
@@ -26,6 +37,7 @@
     "@types/fs-extra": "^11.0.1",
     "@types/inquirer": "^9.0.3",
     "@types/node": "^20.5.4",
+    "conventional-changelog-cli": "^3.0.0",
     "nodemon": "^3.0.1",
     "rimraf": "^5.0.1",
     "typescript": "^5.1.6",
