@@ -1,8 +1,9 @@
 import chalk from "chalk";
-import { LOGO } from "../config";
+import { LOGO, version } from "../config";
+
 // 脚手架信息
 const VERSION: string = `
-\r\n ${chalk.bgMagenta(" 1.0.1 ")}
+\r\n ${chalk.bgMagenta(` ${version} `)}
 ${chalk.magenta(LOGO)}
 `;
 

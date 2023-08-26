@@ -1,3 +1,5 @@
+export const version = "1.0.2";
+
 export const LOGO = `
   _     _ _     __  __     _                  ____ _     ___ 
  | |   (_) |   |  \\/  | __| |_   _           / ___| |   |_ _|
