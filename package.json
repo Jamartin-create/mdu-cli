@@ -1,7 +1,7 @@
 {
-  "name": "mdu-cli",
+  "name": "lilmdu-cli",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Quick build Node.js cli.",
   "main": "./bin/cli.js",
   "type": "commonjs",
@@ -18,6 +18,12 @@
     "mdu-cli",
     "nodejs",
     "express"
+  ],
+  "files": [
+    "lib",
+    "bin",
+    "README",
+    "LICENSE"
   ],
   "author": "LilMartin",
   "license": "ISC",
